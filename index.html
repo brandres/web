@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/blitzer/jquery-ui.css">
+    <link rel='stylesheet' href='/fullcalendar/dist/fullcalendar.css' />
+    <script src='/jquery/dist/jquery.min.js'></script>
+    <script src='/moment/min/moment.min.js'></script>
+    <script src='fullcalendar/dist/fullcalendar.js'></script>
+    <script src='/fullcalendar/dist/locale-all.js'></script>
+    <script src="inicializador.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<h1 style="text-align: center">hola, me llamo Brandon </h1>
+<h2 style="background-color: aqua;border: 2px solid dodgerblue; text-align: center">Hola esto es una <b style="color: brown">pagina de
+    ejemplo</b></h2>
+<script src="reloj.js"></script>
+<hr>
+<body style="background-color: #bce8f1" onload="start()">
+<div style="overflow: auto">
+    <div class="menu">
+        <div class="menuItem"><a href="https://www.google.es">Google</a></div>
+        <div class="menuItem"><a href="pagina.html">Pagina 2</a></div>
+        <div class="menuItem"><a href="https://poliformat.upv.es">Poliformat</a></div>
+    </div>
+    <div class="content" style="text-align: center">
+        <p id="arturo">Arturo maricón</p>
+        <p id="reloj" text></p>
+        <img src="AVE_71216_la_gastronomia_ese_elemento_que_nos_une_a_todos.jpg">
+    </div>
+    <div class="formulario">
+        <form id="form">
+            Nombre:<br>
+            <input type="text" name="Nombre" value="Nombre">
+            <br>
+            Apellido :<br>
+            <input type="text" name="Apellido" value="Apellido">
+            <br>
+        </form>
+        <button  class="boton" onclick="mostrar()" >Enviar</button>
+
+    </div>
+
+</div>
+<br>
+<div id='calendar' style="width: 60%;margin-left: auto;margin-right: auto"></div>
+<br>
+<div style="text-align: center"><button class="bot"> Guardar</button></div>
+</body>
+
+</html>
