@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
     $('#calendar').fullCalendar({
+        defaultView : 'agendaWeek',
         themeSystem:'jquery-ui',
         editable:true,
         droppable:true,
