@@ -9,12 +9,7 @@ app.get('/',function (req,res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 app.post('/heik',function (req,res) {
-    console.log(req.body);
-    console.log(req.body.toString());
     var str = JSON.stringify(req.body);
-    console.log(str);
-    var prs = JSON.parse(str);
-    console.log(prs);
     fs.writeFile('eventsDB.JSON', str, function (err) {
         if (err) throw err;
     console.log('Data written to file');
